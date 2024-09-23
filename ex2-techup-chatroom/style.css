@@ -1,1 +1,102 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.bg {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+}
+
+.chat-header {
+  background-color: gray;
+  color: white;
+  padding: 13px;
+  font-size: 1.5rem;
+}
+
+.right-mesg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 35px;
+}
+
+.mesg1,
+.mesg3 {
+  background-color: #00c853;
+  color: white;
+  padding: 15px 25px;
+  width: 200px;
+  position: relative;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.mesg2 {
+  background-color: rgb(211, 211, 211);
+  color: black;
+  padding: 15px 25px;
+  width: 200px;
+  position: relative;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.mesg2::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "x";
+  bottom: 35px;
+  right: -10px;
+  top: -2px;
+  width: 30px;
+  height: 35px;
+  background-color: rgb(180, 179, 179);
+  border-radius: 50%;
+}
+
+.left-mesg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 35px;
+}
+
+.mesg4,
+.mesg5 {
+  background-color: grey;
+  color: black;
+  padding: 15px 25px;
+  width: 200px;
+  position: relative;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.right-mesg div,
+.left-mesg div {
+  border-radius: 30px;
+}
+
+.mesg1::after {
+  top: -50px;
+  position: absolute;
+  content: "";
+  top: -30px;
+  right: -2px;
+  width: 35px;
+  height: 40px;
+  transform: rotate(40deg);
+  border-radius: 50%;
+  box-shadow: 10px 15px 0px 0px #00c853;
+}

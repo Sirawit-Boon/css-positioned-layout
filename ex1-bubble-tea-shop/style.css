@@ -1,5 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 body {
   font-family: "Kanit";
 }
 
-/* Start coding here */
+.bg {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.cardlist {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  height: 320px;
+  width: 638px;
+  padding: 5px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+img {
+  border-radius: 10px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.store-name {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 4;
+}
+
+.location-tag {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  text-align: center;
+  color: white;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(117, 117, 117);
+  padding-right: 5px;
+  padding-top: 5px;
+  z-index: 4;
+}
+
+.img-cover {
+  position: absolute;
+  background-image: linear-gradient(transparent 70%,black 100%);
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+}
